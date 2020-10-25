@@ -11,7 +11,7 @@ You can thank GitHub for the *wacky* repository name by the way.
   width="48">
 
 ## VS Marketplace Consistent Copy
-The majorety of the time, the VS Marketplace's "Copy" button simply doesn't work, so I fixed it! Made with Tampermonkey.
+The majority of the time, the VS Marketplace's "Copy" button simply doesn't work, so I fixed it! Made with Tampermonkey.
 
 To see if the copy command worked, check your dev tools' console. I could modify it to also shoot a HTML5 notification, but that sounds like it would become annoying very quickly.
 
