@@ -21,3 +21,10 @@ To see if the copy command worked, check your dev tools' console. I could modify
 Make the Nano Editor website's dummy shortcuts functional! Well, some of them.
 
 `^N`, `^W`, and `^T` don't function, at least on Chrome anyway, and therefore are commented out in the code.
+
+![Icon for Media Session Support on KHInsider Downloads](https://downloads.khinsider.com/images/favicon.ico)
+
+## Media Session Support on KHInsider Downloads
+Adds Media Session support to the world's largest host of VGM.
+
+For more information on the Media Session API, read web.dev's article on it: https://web.dev/media-session/
