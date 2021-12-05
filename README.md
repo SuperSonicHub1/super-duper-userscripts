@@ -5,6 +5,11 @@ You can thank GitHub for the *wacky* repository name by the way.
 
 > Great repository names are short and memorable. Need inspiration? How about **super-duper-memory**?
 
+**NOTE**: I'm a lazy programmer, and so this README will slowly fall out of step with its
+contents. All scripts here are short, self explanatory, and require little action
+on the part of the user, so I doubt they all need an explanation. If you're confused about
+something, leave an issue and I'll explain it.
+
 <img
   alt="Icon for VS Marketplace Consistent Copy"
   src="https://visualstudio.microsoft.com/wp-content/uploads/2019/06/BrandVisualStudioWin2019-3.svg"
