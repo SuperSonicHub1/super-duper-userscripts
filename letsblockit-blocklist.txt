@@ -1,0 +1,82 @@
+! Title: letsblock.it - Kyle's letsblock.it list
+! Expires: 12 hours
+! Homepage: https://letsblock.it
+! License: https://github.com/letsblockit/letsblockit/blob/main/LICENSE.txt
+
+! youtube-shorts
+www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-guide-entry-renderer)
+www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-mini-guide-entry-renderer)
+www.youtube.com##ytd-browse[page-subtype="home"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-grid-video-renderer,ytd-rich-item-renderer)
+www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-watch-next-secondary-results-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-compact-video-renderer,ytd-shelf-renderer)
+www.youtube.com##ytd-browse[page-subtype="trending"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-notification-renderer:has(> a[href^="/shorts/"])
+www.youtube.com##ytd-rich-shelf-renderer[is-shorts]
+www.youtube.com##ytd-rich-shelf-renderer[is-shorts].ytd-rich-section-renderer:upward(ytd-rich-section-renderer)
+www.youtube.com##ytd-reel-shelf-renderer
+m.youtube.com##ytm-reel-shelf-renderer
+m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
+m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-video-with-context-renderer)
+m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
+m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer,ytm-video-with-context-renderer)
+m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
+
+! youtube-search-cleanup
+www.youtube.com##ytd-search ytd-item-section-renderer ytd-shelf-renderer
+www.youtube.com##ytd-search ytd-item-section-renderer ytd-horizontal-card-list-renderer
+
+! youtube-recommendations
+
+! youtube-music-cleanup
+music.youtube.com##ytmusic-mealbar-promo-renderer
+music.youtube.com##h2 a[href="mixed_for_you"]:upward(ytmusic-carousel-shelf-renderer)
+music.youtube.com##h2 a[href="moods_and_genres"]:upward(ytmusic-carousel-shelf-renderer):not(:matches-path(/moods_and_genres))
+music.youtube.com##yt-formatted-string > .yt-formatted-string:has-text(YouTube Music):upward(.ytmusic-carousel):not(:matches-path(/moods_and_genres))
+music.youtube.com##ytmusic-grid-renderer[grid-type="library"] yt-formatted-string:has-text(YouTube Music):upward(ytmusic-two-row-item-renderer)
+music.youtube.com###contentContainer ytmusic-guide-entry-renderer[play-button-state] .subtitle-group:has-text(YouTube Music):upward(ytmusic-guide-entry-renderer)
+music.youtube.com##.ytmusic-player-page.tab-header-container .tab-header:nth-of-type(3)
+
+! youtube-mixes
+www.youtube.com##ytd-browse #video-title-link[href*="&start_radio=1"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-search ytd-radio-renderer
+www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-compact-radio-renderer
+www.youtube.com##ytd-player div.videowall-endscreen a[data-is-list=true]
+m.youtube.com##ytm-browse ytm-radio-renderer:upward(ytm-rich-item-renderer)
+m.youtube.com##ytm-search ytm-compact-radio-renderer
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
+
+! youtube-menu-cleanup
+www.youtube.com##tp-yt-app-drawer#guide .ytd-guide-section-renderer > #header:has(a[href="/feed/you"])
+www.youtube.com##a.ytd-guide-entry-renderer[href^="/feed/trending"]:upward(ytd-guide-section-renderer)
+www.youtube.com##h3 > #guide-section-title:has-text(YouTube):upward(ytd-guide-section-renderer)
+
+! youtube-cleanup
+www.youtube.com###description #info a[href^="/hashtag/"]
+www.youtube.com##.super-title
+m.youtube.com##.standalone-collection-badge a[href^="/hashtag/"]
+m.youtube.com##ytm-video-description-header-renderer button-view-model a[href^="/hashtag/"]
+www.youtube.com###cinematics.ytd-watch-flexy:remove()
+www.youtube.com##ytd-reel-video-renderer~ytd-reel-video-renderer:matches-path(/shorts/)
+www.youtube.com###comments #contents:remove()
+
+! youtube-homepage-cleanup
+www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-section-renderer:not(:has(ytd-feed-nudge-renderer))
+www.youtube.com##ytd-rich-item-renderer[is-post].ytd-rich-shelf-renderer:upward(ytd-rich-section-renderer)
+
+! google-search-cleanup
+!# Desktop browsers
+||google.*/complete/search?q&cp=0$domain=google.*,important
+## Mobile browsers
+||google.*/complete/search?q&pq&cp=0$domain=google.*,important
+
+! fandom-cleanup
+fandom.com###age-gate
+
+! soundcloud-comments
+soundcloud.com##.waveformCommentsNode,.commentPlaceholder,.commentPopover
+
+! url-param-remover
