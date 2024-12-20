@@ -10,6 +10,13 @@ contents. All scripts here are short, self explanatory, and require little actio
 on the part of the user, so I doubt they all need an explanation. If you're confused about
 something, leave an issue and I'll explain it.
 
+## letsblock.it "Self-hosting"
+
+[letsblock.it](https://github.com/letsblockit/letsblockit) was a great community tool for sharing parametric blocklists.
+I found it especially useful for its YouTube features.
+Over the summer, the project was shut down by its maintainers, which was a shame, but they left behind a (mostly) easy-to-use tool for still making use of people's templates on the command line.
+I use GH Actions to generate the blocklist whenever I update my filters, and then use this repo itself as the host so I can easily access it from my browsers.
+
 <img
   alt="Icon for VS Marketplace Consistent Copy"
   src="https://visualstudio.microsoft.com/wp-content/uploads/2019/06/BrandVisualStudioWin2019-3.svg"
