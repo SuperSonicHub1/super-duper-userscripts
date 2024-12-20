@@ -1,0 +1,39 @@
+# https://github.com/letsblockit/letsblockit/tree/main/cmd/render
+title: "Kyle's letsblock.it list"
+instances:
+  - template: youtube-shorts
+  - template: youtube-search-cleanup
+  - template: youtube-recommendations
+  - template: youtube-music-cleanup
+    params:
+      hide-promo: true
+      remove-mixed-for-you: true
+      remove-recommended-playlists: true
+      remove-youtube-made-playlists: true
+      remove-related-tab: true
+  - template: youtube-mixes
+  - template: youtube-menu-cleanup
+    params:
+      your-feed: true
+      explore: true
+      more-from-youtube: true
+  - template: youtube-cleanup
+    params:
+      remove-video-hashtags: true
+      no-ambient-mode: true
+      disable-inifite-scrolling-shorts: true
+      remove-comment-section: true
+  - template: youtube-homepage-cleanup
+    params:
+      only-videos: true
+      new-posts-section: true
+  - template: google-search-cleanup
+    params:
+      search-zero-prefix: true
+  - template: fandom-cleanup
+    params:
+      age-gate: true
+  - template: soundcloud-comments
+    params:
+      waveform: true
+  - template: url-param-remover
