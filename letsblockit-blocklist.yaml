@@ -4,6 +4,12 @@ instances:
   - template: youtube-shorts
   - template: youtube-search-cleanup
   - template: youtube-recommendations
+    params:
+      related-videos: true
+      homepage-recommendations: true
+      end-of-video-overlay: true
+      endscreen-content: true
+      playlist-recommendations: true
   - template: youtube-music-cleanup
     params:
       hide-promo: true
@@ -32,8 +38,18 @@ instances:
       search-zero-prefix: true
   - template: fandom-cleanup
     params:
+      yellow-sidebar: true
+      button-notifications: true
+      blue-wikia-bar: true
+      global-footer: true
+      fan-footer: true
+      right-sidebar: true
+      explore-menu: true
+      selection-container: true
+      search: true
+      edit-buttons: true
+      reviews: true
       age-gate: true
   - template: soundcloud-comments
     params:
       waveform: true
-  - template: url-param-remover
