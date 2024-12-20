@@ -30,6 +30,14 @@ www.youtube.com##ytd-search ytd-item-section-renderer ytd-shelf-renderer
 www.youtube.com##ytd-search ytd-item-section-renderer ytd-horizontal-card-list-renderer
 
 ! youtube-recommendations
+www.youtube.com###related
+m.youtube.com##ytm-watch ytm-item-section-renderer[data-content-type="related"]
+www.youtube.com##ytd-browse[page-subtype="home"]
+m.youtube.com##ytm-browse div[tab-identifier="FEwhat_to_watch"]
+www.youtube.com##.ytp-ce-element
+www.youtube.com##.ytp-endscreen-content
+www.youtube.com##ytd-browse[page-subtype="playlist"] [title-style="ITEM_SECTION_HEADER_TITLE_STYLE_PLAYLIST_RECOMMENDATIONS"]:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="playlist"] ytd-grid-playlist-renderer:upward(#dismissible)
 
 ! youtube-music-cleanup
 music.youtube.com##ytmusic-mealbar-promo-renderer
@@ -74,9 +82,23 @@ www.youtube.com##ytd-rich-item-renderer[is-post].ytd-rich-shelf-renderer:upward(
 ||google.*/complete/search?q&pq&cp=0$domain=google.*,important
 
 ! fandom-cleanup
+fandom.com##.global-navigation
+fandom.com##.main-container:style(width: 100% !important; margin-left: auto !important; margin-right: auto !important;)
+fandom.com##.fandom-community-header__background:style(width: 100% !important)
+fandom.com##.fandom-sticky-header:style(left: 0 !important;)
+fandom.com##.search-modal::before:style(left: 0 !important;)
+fandom.com##body:style(border-left: none !important;)
+fandom.com###WikiaBar
+fandom.com##.global-footer
+fandom.com###mixed-content-footer
+fandom.com##.page__right-rail
+fandom.com##.explore-menu.wds-dropdown
+fandom.com##.highlight__sticky-container
+fandom.com##.search-seeding
+fandom.com##.page-side-tool.page-side-edit
+fandom.com##.mw-editsection
+fandom.com##.reviews
 fandom.com###age-gate
 
 ! soundcloud-comments
 soundcloud.com##.waveformCommentsNode,.commentPlaceholder,.commentPopover
-
-! url-param-remover
